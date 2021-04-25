@@ -7,9 +7,5 @@ import { Component } from '@stencil/core' ;
 
 export class DesignaryContact {
     render() {
-
-
-}
-
-
+    }
 }
