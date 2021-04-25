@@ -12,6 +12,7 @@ export class DesignaryGreyContainer {
       <Host>
         <div class="grey-container">
           <slot></slot>
+          <div class="greyline"></div>
         </div>
       </Host>
     );
