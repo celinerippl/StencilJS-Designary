@@ -1,7 +1,7 @@
 import { Component } from '@stencil/core' ;
 
-@component({
-    tag: 'designary-contact'
+@Component({
+    tag: 'designary-contact',
     styleUrl : 'designary-contact.css'
 })
 

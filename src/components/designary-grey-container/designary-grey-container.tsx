@@ -10,7 +10,9 @@ export class DesignaryGreyContainer {
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div class="grey-container">
+          <slot></slot>
+        </div>
       </Host>
     );
   }

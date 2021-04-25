@@ -1,3 +1,9 @@
 :host {
   display: block;
 }
+
+.grey-container {
+  width: 100%;
+  height: fit-content;
+  background-color: #212121;
+}

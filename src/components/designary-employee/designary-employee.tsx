@@ -7,7 +7,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 })
 export class DesignaryEmployee {
 
-  @Prop test: String;
+  @Prop() test: String;
 
   render() {
 
