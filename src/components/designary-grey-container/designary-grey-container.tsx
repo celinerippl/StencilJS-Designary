@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'designary-grey-container',
@@ -7,12 +7,15 @@ import { Component, Host, h } from '@stencil/core';
 })
 export class DesignaryGreyContainer {
 
+  @Prop() containerTitle: string;
+
   render() {
     return (
       <Host>
         <div class="grey-container">
-          <slot></slot>
+          {this.containerTitle}
           <div class="greyline"></div>
+          <slot></slot>
         </div>
       </Host>
     );

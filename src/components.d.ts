@@ -12,6 +12,7 @@ export namespace Components {
         "test": String;
     }
     interface DesignaryGreyContainer {
+        "containerTitle": string;
     }
     interface DesignarySlider {
     }
@@ -96,6 +97,7 @@ declare namespace LocalJSX {
         "test"?: String;
     }
     interface DesignaryGreyContainer {
+        "containerTitle"?: string;
     }
     interface DesignarySlider {
     }

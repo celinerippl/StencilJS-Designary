@@ -10,7 +10,7 @@
   height: 616px;
   padding-top: 90px;
   background-color: #212121;
-  color: white;
+  color: #EEEEEE;
   font-size: 33pt;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -26,4 +26,5 @@
   width: 80px;
   background-color: #32323C;
   margin-top: 25px;
+  margin-bottom: 60px;
 }
