@@ -6,6 +6,12 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DesignaryGreyContainer {
+    }
+    interface DesignarySlider {
+    }
+    interface DesignaryTestimonial {
+    }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
@@ -26,6 +32,24 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLDesignaryGreyContainerElement extends Components.DesignaryGreyContainer, HTMLStencilElement {
+    }
+    var HTMLDesignaryGreyContainerElement: {
+        prototype: HTMLDesignaryGreyContainerElement;
+        new (): HTMLDesignaryGreyContainerElement;
+    };
+    interface HTMLDesignarySliderElement extends Components.DesignarySlider, HTMLStencilElement {
+    }
+    var HTMLDesignarySliderElement: {
+        prototype: HTMLDesignarySliderElement;
+        new (): HTMLDesignarySliderElement;
+    };
+    interface HTMLDesignaryTestimonialElement extends Components.DesignaryTestimonial, HTMLStencilElement {
+    }
+    var HTMLDesignaryTestimonialElement: {
+        prototype: HTMLDesignaryTestimonialElement;
+        new (): HTMLDesignaryTestimonialElement;
+    };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
     var HTMLExampleComponentElement: {
@@ -39,11 +63,20 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "designary-grey-container": HTMLDesignaryGreyContainerElement;
+        "designary-slider": HTMLDesignarySliderElement;
+        "designary-testimonial": HTMLDesignaryTestimonialElement;
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface DesignaryGreyContainer {
+    }
+    interface DesignarySlider {
+    }
+    interface DesignaryTestimonial {
+    }
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
@@ -63,6 +96,9 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "designary-grey-container": DesignaryGreyContainer;
+        "designary-slider": DesignarySlider;
+        "designary-testimonial": DesignaryTestimonial;
         "example-component": ExampleComponent;
         "my-component": MyComponent;
     }
@@ -71,6 +107,9 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "designary-grey-container": LocalJSX.DesignaryGreyContainer & JSXBase.HTMLAttributes<HTMLDesignaryGreyContainerElement>;
+            "designary-slider": LocalJSX.DesignarySlider & JSXBase.HTMLAttributes<HTMLDesignarySliderElement>;
+            "designary-testimonial": LocalJSX.DesignaryTestimonial & JSXBase.HTMLAttributes<HTMLDesignaryTestimonialElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
