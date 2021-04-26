@@ -19,19 +19,13 @@ export class DesignaryContact {
       <div class="address">Beispielstraße 1, 12345 Musterstadt</div>
     </div>
     <div class="flex-row-3">
-      <img
-        class="path"
-        src='src/icons/contact-icon8.png'
-      />
+      <img class="path" src='src/icons/contact-icon8.png'/>
       <div class="phone lato-light-gallery-16px">(+1) 123 456 7890</div>
     </div>
     <div class="flex-row-1">
       <div class="icon">
         <div class="overlap-group4 border-2px-gallery">
-          <img
-            class="line-1"
-            src='src/icons/contact-icon5.png'
-          />
+          <img class="line-1" src='src/icons/contact-icon5.png'/>
         </div>
       </div>
       <div class="mobile lato-light-gallery-16px">(+1) 098 765 4321</div>
@@ -55,10 +49,7 @@ export class DesignaryContact {
     <div class="circle-button">
       <div class="icon-2">
         <div class="overlap-group1">
-          <img
-            class="line"
-            src='src/icons/contact-icon4.png'
-          />
+          <img class="line"src='src/icons/contact-icon4.png'/>
         </div>
       </div>
     </div>
