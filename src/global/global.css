@@ -1,3 +1,7 @@
 :root {
     --app-example-var: black;
 }
+
+body {
+    margin: 0px;
+}
