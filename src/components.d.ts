@@ -16,6 +16,8 @@ export namespace Components {
     }
     interface DesignarySlider {
     }
+    interface DesignaryTest {
+    }
     interface DesignaryTestimonial {
     }
     interface ExampleComponent {
@@ -62,6 +64,12 @@ declare global {
         prototype: HTMLDesignarySliderElement;
         new (): HTMLDesignarySliderElement;
     };
+    interface HTMLDesignaryTestElement extends Components.DesignaryTest, HTMLStencilElement {
+    }
+    var HTMLDesignaryTestElement: {
+        prototype: HTMLDesignaryTestElement;
+        new (): HTMLDesignaryTestElement;
+    };
     interface HTMLDesignaryTestimonialElement extends Components.DesignaryTestimonial, HTMLStencilElement {
     }
     var HTMLDesignaryTestimonialElement: {
@@ -85,6 +93,7 @@ declare global {
         "designary-employee": HTMLDesignaryEmployeeElement;
         "designary-grey-container": HTMLDesignaryGreyContainerElement;
         "designary-slider": HTMLDesignarySliderElement;
+        "designary-test": HTMLDesignaryTestElement;
         "designary-testimonial": HTMLDesignaryTestimonialElement;
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
@@ -100,6 +109,8 @@ declare namespace LocalJSX {
         "containerTitle"?: string;
     }
     interface DesignarySlider {
+    }
+    interface DesignaryTest {
     }
     interface DesignaryTestimonial {
     }
@@ -126,6 +137,7 @@ declare namespace LocalJSX {
         "designary-employee": DesignaryEmployee;
         "designary-grey-container": DesignaryGreyContainer;
         "designary-slider": DesignarySlider;
+        "designary-test": DesignaryTest;
         "designary-testimonial": DesignaryTestimonial;
         "example-component": ExampleComponent;
         "my-component": MyComponent;
@@ -139,6 +151,7 @@ declare module "@stencil/core" {
             "designary-employee": LocalJSX.DesignaryEmployee & JSXBase.HTMLAttributes<HTMLDesignaryEmployeeElement>;
             "designary-grey-container": LocalJSX.DesignaryGreyContainer & JSXBase.HTMLAttributes<HTMLDesignaryGreyContainerElement>;
             "designary-slider": LocalJSX.DesignarySlider & JSXBase.HTMLAttributes<HTMLDesignarySliderElement>;
+            "designary-test": LocalJSX.DesignaryTest & JSXBase.HTMLAttributes<HTMLDesignaryTestElement>;
             "designary-testimonial": LocalJSX.DesignaryTestimonial & JSXBase.HTMLAttributes<HTMLDesignaryTestimonialElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
