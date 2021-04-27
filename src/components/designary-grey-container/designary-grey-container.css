@@ -28,3 +28,11 @@
   margin-top: 25px;
   margin-bottom: 60px;
 }
+
+.component-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 20px;
+  align-items: stretch;
+}

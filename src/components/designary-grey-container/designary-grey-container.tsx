@@ -15,7 +15,9 @@ export class DesignaryGreyContainer {
         <div class="grey-container">
           {this.containerTitle}
           <div class="greyline"></div>
-          <slot></slot>
+          <div class="component-container"> 
+            <slot></slot>
+          </div>
         </div>
       </Host>
     );
