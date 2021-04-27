@@ -13,7 +13,9 @@ export class DesignaryTestimonial {
       <Host>
         <div class="testimonial-container">
           <div class="greenline"></div>
-          <slot></slot>
+            <div class="text-container">
+              <slot></slot>
+            </div>
           <div class="greenline"></div>
         </div>
       </Host>
