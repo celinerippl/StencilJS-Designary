@@ -1,6 +1,7 @@
 :host {
   display: block;
-  width: 560px;
+  width: 42vw;
+  margin: 0px;
 }
 
 .testimonial-container {
@@ -9,22 +10,30 @@
   flex-direction: column;
   justify-content: center;
   height: 220px;
-  width: 560px;
-  margin-left: 95px;
-  font-size: 25px;
+  width: 42vw;
+  max-width: 560px;
+  font-size: 24pt;
+  padding: 20px;
 }
 
 .greenline {
     height: 2px;
-    width: 560px;
+    width: 42vw;
     background-color: #34FFC8;
 }
 
 .text-container {
-  margin: 20px 20px 20px 20px;
-  width: 680px;
+  padding: 20px 80px 70px 40px;
+  line-height: 1.7;
+  width: 40vw;
+  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 100px;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.customer-container {
+  font-size: 20pt;
 }

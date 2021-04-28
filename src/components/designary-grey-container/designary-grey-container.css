@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 
@@ -32,7 +33,15 @@
 .component-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
-  margin-left: 20px;
-  align-items: stretch;
+  justify-content: space-around;
+}
+
+slot {
+  margin: 0px;
+}
+
+.slot-container {
+  justify-self: center;
 }
