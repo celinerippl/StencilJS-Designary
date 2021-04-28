@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface DesignaryContact {
+        "containerTitle": string;
     }
     interface DesignaryEmployee {
         "test": String;
@@ -92,6 +93,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface DesignaryContact {
+        "containerTitle"?: string;
     }
     interface DesignaryEmployee {
         "test"?: String;
