@@ -9,6 +9,8 @@ export namespace Components {
     interface DesignaryContact {
         "containerTitle": string;
     }
+    interface DesignaryContact2 {
+    }
     interface DesignaryEmployee {
         "test": String;
     }
@@ -44,6 +46,12 @@ declare global {
     var HTMLDesignaryContactElement: {
         prototype: HTMLDesignaryContactElement;
         new (): HTMLDesignaryContactElement;
+    };
+    interface HTMLDesignaryContact2Element extends Components.DesignaryContact2, HTMLStencilElement {
+    }
+    var HTMLDesignaryContact2Element: {
+        prototype: HTMLDesignaryContact2Element;
+        new (): HTMLDesignaryContact2Element;
     };
     interface HTMLDesignaryEmployeeElement extends Components.DesignaryEmployee, HTMLStencilElement {
     }
@@ -83,6 +91,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "designary-contact": HTMLDesignaryContactElement;
+        "designary-contact2": HTMLDesignaryContact2Element;
         "designary-employee": HTMLDesignaryEmployeeElement;
         "designary-grey-container": HTMLDesignaryGreyContainerElement;
         "designary-slider": HTMLDesignarySliderElement;
@@ -94,6 +103,8 @@ declare global {
 declare namespace LocalJSX {
     interface DesignaryContact {
         "containerTitle"?: string;
+    }
+    interface DesignaryContact2 {
     }
     interface DesignaryEmployee {
         "test"?: String;
@@ -125,6 +136,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "designary-contact": DesignaryContact;
+        "designary-contact2": DesignaryContact2;
         "designary-employee": DesignaryEmployee;
         "designary-grey-container": DesignaryGreyContainer;
         "designary-slider": DesignarySlider;
@@ -138,6 +150,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "designary-contact": LocalJSX.DesignaryContact & JSXBase.HTMLAttributes<HTMLDesignaryContactElement>;
+            "designary-contact2": LocalJSX.DesignaryContact2 & JSXBase.HTMLAttributes<HTMLDesignaryContact2Element>;
             "designary-employee": LocalJSX.DesignaryEmployee & JSXBase.HTMLAttributes<HTMLDesignaryEmployeeElement>;
             "designary-grey-container": LocalJSX.DesignaryGreyContainer & JSXBase.HTMLAttributes<HTMLDesignaryGreyContainerElement>;
             "designary-slider": LocalJSX.DesignarySlider & JSXBase.HTMLAttributes<HTMLDesignarySliderElement>;
